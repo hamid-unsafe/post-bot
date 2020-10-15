@@ -50,7 +50,7 @@ async def new_message_handler(event):
         id=[event.message.id]
       ))
 
-      await client.send_message('@siddkabot', message.messages[0])
+      await client.send_message('@autopostingnewbot', message.messages[0])
 
 async def joinChannel(id):
   channel = await client.get_entity(id)
